@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+h2 {
+    margin-top: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #2B2A52;
+}
+
+.form {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 180px;
+}
+.form__wrap {
+    position: relative;
+    width: 100%;
+    min-height: 180px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    grid-template-rows: repeat(3, 50px);
+    column-gap: 30px;
+    row-gap: 15px;
+}
+.form__wrap input {
+    position: relative;
+    padding: 0 15px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    font-size: 14px;
+}
+#message {
+    width: 570px;
+    height: 180px;
+    resize: none;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    padding: 15px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+}
+input:focus {
+    outline: none;
+    border-color: #9CD6E1;
+    border-width: 2px;
+   
+}
+#message:focus {
+    outline: #9CD6E1;
+    border-color: #9CD6E1;
+    border-width: 2px;
+}
+.btn {
+    width: 200px;
+    height: 48px;
+    margin-left: 302px;
+
+    background: #9CD6E1;
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    border: none;
+
+    transition: all 0.4s ease-out;
+}
+.btn:hover {
+    background: #78D0E0;
+    color: #FFFFFF;
+}
+
+.form__check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.form__check-policy {
+    display: flex;
+    align-items: center;
+}
+label {
+    padding-left: 15px;
+    font-size: 14px;
+}
+#confid {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+}
+.checked {
+    background: #9CD6E1;
+}
+.text span {
+    color:  #416BBB;
+    text-decoration: underline;
+}
+.error {
+    background: #FFEFEE;
+    border: 1px solid #E7E7E7;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #F03D3D;
+}
+.error:focus {
+    border: 1px solid #E7E7E7;
+}
+.error::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #F03D3D;
+}
+.top::placeholder {
+    position: absolute;
+    top: 2px;
+    font-size: 10px;
+
+}
+.info {
+    position: absolute;
+    top: 80px;
+    left: 340px;
+    font-size: 14px;
+    color: #F03D3D;
+}
+
+.checkmark {
+    position: absolute;
+    top: 80px;
+    left: 540px;
+    opacity: 0;
+    transition: opacity .4s linear;
+}

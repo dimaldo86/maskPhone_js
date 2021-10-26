@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+    <body> 
+        <div class="container">
+
+        <h2>Задать вопрос</h2>
+
+        <form action="#" class="form" id="form">
+            <div class="form__wrap">
+                <input type="text" class="form__name" name="name" placeholder="Имя*">
+                <input type="text" name="phone" placeholder="Телефон*">
+                <input type="text" name="organization" placeholder="Название организации">
+                <textarea name="message" id="message" placeholder="Текст сообщения"></textarea>
+                <div class="info"></div>
+                <div class="checkmark">
+                    <img src="./img/checkmark.svg" alt="checkmark" >
+                </div>
+            </div>
+
+            <div class="form__check">
+                <div class="form__check-policy">
+                    <input type="checkbox" class="check" id="confid" name="confid">
+                    <label class="text" for="confid">Нажимая кнопку отправить вы соглашаетесь <span> с политикой конфиденциальных данных</span></label>
+                </div> 
+                <button  class="btn" type="submit">Отправить</button>
+            </div>
+        </form>
+
+        </div> <!--container-->
+
+        <script src="app.js"></script>
+    </body>
+</html>
